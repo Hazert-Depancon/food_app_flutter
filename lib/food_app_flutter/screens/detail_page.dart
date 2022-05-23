@@ -281,26 +281,24 @@ class _DetailPageState extends State<DetailPage> {
                   height: 50,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(12.0),
-                        bottomLeft: Radius.circular(12.0)),
+                      topLeft: Radius.circular(12.0),
+                      bottomLeft: Radius.circular(12.0),
+                    ),
                     color: Colors.grey[300],
                   ),
                   child: IconButton(
                     onPressed: () {
                       setState(() {
-                        if (sayi >= 9) {
+                        if (sayi <= 1) {
                           sayi = sayi;
                           yeniFiyat = yeniFiyat;
-                        } else if (sayi == 1) {
-                          sayi++;
-                          yeniFiyat = widget.fiyat + widget.fiyat;
                         } else {
-                          sayi++;
-                          yeniFiyat = yeniFiyat + widget.fiyat;
+                          sayi--;
+                          yeniFiyat = yeniFiyat - widget.fiyat;
                         }
                       });
                     },
-                    icon: const Icon(Icons.add),
+                    icon: const Icon(Icons.remove),
                   ),
                 ),
                 Container(
@@ -325,23 +323,27 @@ class _DetailPageState extends State<DetailPage> {
                   height: 50,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
-                        topRight: Radius.circular(12.0),
-                        bottomRight: Radius.circular(12.0)),
+                      topRight: Radius.circular(12.0),
+                      bottomRight: Radius.circular(12.0),
+                    ),
                     color: Colors.grey[300],
                   ),
                   child: IconButton(
                     onPressed: () {
                       setState(() {
-                        if (sayi <= 1) {
+                        if (sayi >= 9) {
                           sayi = sayi;
                           yeniFiyat = yeniFiyat;
+                        } else if (sayi == 1) {
+                          sayi++;
+                          yeniFiyat = widget.fiyat + widget.fiyat;
                         } else {
-                          sayi--;
-                          yeniFiyat = yeniFiyat - widget.fiyat;
+                          sayi++;
+                          yeniFiyat = yeniFiyat + widget.fiyat;
                         }
                       });
                     },
-                    icon: const Icon(Icons.remove),
+                    icon: const Icon(Icons.add),
                   ),
                 ),
               ],
