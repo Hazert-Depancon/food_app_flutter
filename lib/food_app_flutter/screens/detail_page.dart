@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/models/istek_model.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/models/yaninda_iyi_gider.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/screens/image_detail_page.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/styles/app_colors.dart';
+import 'package:koy_icin_ui/food_app_flutter/models/istek_model.dart';
+import 'package:koy_icin_ui/food_app_flutter/models/yaninda_iyi_gider.dart';
+import 'package:koy_icin_ui/food_app_flutter/screens/image_detail_page.dart';
+import 'package:koy_icin_ui/food_app_flutter/styles/app_colors.dart';
 
 // ignore: must_be_immutable
 class DetailPage extends StatefulWidget {

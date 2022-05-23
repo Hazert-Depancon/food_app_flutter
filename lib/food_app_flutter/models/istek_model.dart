@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/styles/app_colors.dart';
+import 'package:koy_icin_ui/food_app_flutter/styles/app_colors.dart';
 
 class IstekModel extends StatefulWidget {
   final List liste;

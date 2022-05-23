@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/screens/explore_page.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/screens/first_page.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/screens/home_page.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/screens/profile_page.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/screens/saved_page.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/styles/app_colors.dart';
+import 'package:koy_icin_ui/food_app_flutter/screens/explore_page.dart';
+import 'package:koy_icin_ui/food_app_flutter/screens/home_page.dart';
+import 'package:koy_icin_ui/food_app_flutter/screens/profile_page.dart';
+import 'package:koy_icin_ui/food_app_flutter/screens/saved_page.dart';
+import 'package:koy_icin_ui/food_app_flutter/styles/app_colors.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);

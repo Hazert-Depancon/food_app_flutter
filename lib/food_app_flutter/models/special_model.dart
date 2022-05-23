@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/screens/detail_page.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/styles/app_colors.dart';
+import 'package:koy_icin_ui/food_app_flutter/screens/detail_page.dart';
+import 'package:koy_icin_ui/food_app_flutter/styles/app_colors.dart';
 
 class SpecialModel extends StatelessWidget {
   final String image;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/styles/app_colors.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/widgets/bottom_nav_bar.dart';
+import 'package:koy_icin_ui/food_app_flutter/styles/app_colors.dart';
+import 'package:koy_icin_ui/food_app_flutter/widgets/bottom_nav_bar.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/screens/first_page.dart';
+import 'package:koy_icin_ui/food_app_flutter/screens/first_page.dart';
 
 void main() {
   runApp(const MyApp());

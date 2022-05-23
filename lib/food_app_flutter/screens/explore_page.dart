@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/models/special_model.dart';
-import 'package:koy_icin_ui/ui_day_one%20-complated-/styles/app_colors.dart';
+import 'package:koy_icin_ui/food_app_flutter/models/special_model.dart';
+import 'package:koy_icin_ui/food_app_flutter/styles/app_colors.dart';
 
 class ExplorePage extends StatelessWidget {
   const ExplorePage({Key? key}) : super(key: key);
