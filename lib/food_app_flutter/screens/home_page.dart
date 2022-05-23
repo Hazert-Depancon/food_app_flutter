@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:koy_icin_ui/food_app_flutter/models/special_model.dart';
 import 'package:koy_icin_ui/food_app_flutter/styles/app_colors.dart';
+import 'package:koy_icin_ui/food_app_flutter/widgets/special_model.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);

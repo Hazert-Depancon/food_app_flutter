@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:koy_icin_ui/food_app_flutter/models/istek_model.dart';
-import 'package:koy_icin_ui/food_app_flutter/models/yaninda_iyi_gider.dart';
 import 'package:koy_icin_ui/food_app_flutter/screens/image_detail_page.dart';
 import 'package:koy_icin_ui/food_app_flutter/styles/app_colors.dart';
+import 'package:koy_icin_ui/food_app_flutter/widgets/istek_model.dart';
+import 'package:koy_icin_ui/food_app_flutter/widgets/yaninda_iyi_gider.dart';
 
 // ignore: must_be_immutable
 class DetailPage extends StatefulWidget {
@@ -276,6 +276,79 @@ class _DetailPageState extends State<DetailPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(12.0),
+                        bottomLeft: Radius.circular(12.0)),
+                    color: Colors.grey[300],
+                  ),
+                  child: IconButton(
+                    onPressed: () {
+                      setState(() {
+                        if (sayi >= 9) {
+                          sayi = sayi;
+                          yeniFiyat = yeniFiyat;
+                        } else if (sayi == 1) {
+                          sayi++;
+                          yeniFiyat = widget.fiyat + widget.fiyat;
+                        } else {
+                          sayi++;
+                          yeniFiyat = yeniFiyat + widget.fiyat;
+                        }
+                      });
+                    },
+                    icon: const Icon(Icons.add),
+                  ),
+                ),
+                Container(
+                  width: 60,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: AppColors.primaryColor,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Center(
+                    child: Text(
+                      sayi.toString(),
+                      style: const TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.only(
+                        topRight: Radius.circular(12.0),
+                        bottomRight: Radius.circular(12.0)),
+                    color: Colors.grey[300],
+                  ),
+                  child: IconButton(
+                    onPressed: () {
+                      setState(() {
+                        if (sayi <= 1) {
+                          sayi = sayi;
+                          yeniFiyat = yeniFiyat;
+                        } else {
+                          sayi--;
+                          yeniFiyat = yeniFiyat - widget.fiyat;
+                        }
+                      });
+                    },
+                    icon: const Icon(Icons.remove),
+                  ),
+                ),
+              ],
+            ),
+            /*Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 Text(
                   sayi.toString(),
                   style: const TextStyle(
@@ -317,7 +390,7 @@ class _DetailPageState extends State<DetailPage> {
                   ],
                 ),
               ],
-            ),
+            ),*/
             const SizedBox(height: 20),
             const Padding(
               padding: EdgeInsets.only(left: 20.0),
