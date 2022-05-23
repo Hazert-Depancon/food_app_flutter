@@ -346,51 +346,6 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               ],
             ),
-            /*Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  sayi.toString(),
-                  style: const TextStyle(
-                      fontSize: 25, fontWeight: FontWeight.bold),
-                ),
-                Column(
-                  children: [
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          if (sayi >= 9) {
-                            sayi = sayi;
-                            yeniFiyat = yeniFiyat;
-                          } else if (sayi == 1) {
-                            sayi++;
-                            yeniFiyat = widget.fiyat + widget.fiyat;
-                          } else {
-                            sayi++;
-                            yeniFiyat = yeniFiyat + widget.fiyat;
-                          }
-                        });
-                      },
-                      icon: const Icon(Icons.arrow_drop_up_sharp),
-                    ),
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          if (sayi <= 1) {
-                            sayi = sayi;
-                            yeniFiyat = yeniFiyat;
-                          } else {
-                            sayi--;
-                            yeniFiyat = yeniFiyat - widget.fiyat;
-                          }
-                        });
-                      },
-                      icon: const Icon(Icons.arrow_drop_down_sharp),
-                    ),
-                  ],
-                ),
-              ],
-            ),*/
             const SizedBox(height: 20),
             const Padding(
               padding: EdgeInsets.only(left: 20.0),
