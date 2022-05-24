@@ -278,7 +278,7 @@ class _DetailPageState extends State<DetailPage> {
               children: [
                 Container(
                   width: 50,
-                  height: 50,
+                  height: 70,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(12.0),
@@ -304,9 +304,8 @@ class _DetailPageState extends State<DetailPage> {
                 Container(
                   width: 60,
                   height: 70,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: AppColors.primaryColor,
-                    borderRadius: BorderRadius.circular(12),
                   ),
                   child: Center(
                     child: Text(
@@ -320,7 +319,7 @@ class _DetailPageState extends State<DetailPage> {
                 ),
                 Container(
                   width: 50,
-                  height: 50,
+                  height: 70,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
                       topRight: Radius.circular(12.0),
